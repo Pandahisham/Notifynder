@@ -26,7 +26,7 @@ class NotifynderCollection extends Collection {
      * @param array                $models
      * @param NotifynderTranslator $notifynderTranslator
      */
-    function __construct($models,NotifynderTranslator $notifynderTranslator)
+    function __construct($models,$notifynderTranslator = null)
     {
         parent::__construct($models);
         $this->notifynderTranslator = $notifynderTranslator;
